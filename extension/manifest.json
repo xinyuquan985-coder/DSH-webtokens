@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek Harness 网页桥接",
+  "version": "0.2.19",
+  "description": "将本机 Harness 任务送到已登录的 DeepSeek 网页，并回传文本及工具指令。",
+  "permissions": ["storage", "alarms"],
+  "host_permissions": ["http://127.0.0.1:3081/*", "https://chat.deepseek.com/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [
+    { "matches": ["https://chat.deepseek.com/*"], "js": ["render-clock.js"], "run_at": "document_start", "world": "MAIN" },
+    { "matches": ["https://chat.deepseek.com/*"], "js": ["records.js", "page.js", "inspect.js", "repair.js", "content.js"], "run_at": "document_idle" }
+  ],
+  "action": { "default_title": "DeepSeek Harness 网页桥接", "default_popup": "popup.html" }
+}

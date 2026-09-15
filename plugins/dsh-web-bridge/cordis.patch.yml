@@ -1,0 +1,7 @@
+- insert:
+    - id: deepseek-web-bridge
+      name: dsh-web-bridge
+      config:
+        token: !!js process.env.DSH_WEB_BRIDGE_TOKEN
+        auditPath: !!js process.env.DSH_WEB_BRIDGE_AUDIT
+        port: 3081

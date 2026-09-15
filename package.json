@@ -1,0 +1,58 @@
+{
+  "name": "dsh-web-bridge",
+  "version": "0.2.15",
+  "description": "DeepSeek Harness browser bridge — stable source 82440ec",
+  "type": "module",
+  "main": "./plugins/dsh-web-bridge/index.js",
+  "exports": {
+    ".": "./plugins/dsh-web-bridge/index.js",
+    "./package.json": "./package.json",
+    "./client": "./plugins/dsh-web-bridge/client.js",
+    "./cordis.patch.yml": "./plugins/dsh-web-bridge/cordis.patch.yml"
+  },
+  "bin": {
+    "dsh-web-bridge": "./bin/dsh-web-bridge.mjs"
+  },
+  "files": [
+    "plugins/dsh-web-bridge/",
+    "extension/*.js",
+    "extension/manifest.json",
+    "extension/package.json",
+    "extension/popup.html",
+    "bin/",
+    "README.md",
+    "SOURCE.json",
+    "VERIFICATION.md"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinyuquan985-coder/DSH-webtokens.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./plugins/dsh-web-bridge/cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ],
+      "platform": "web"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-llm": "0.1.5-rc.2",
+    "@deepseek-ai/schemastery": "3.18.2",
+    "ajv": "8.20.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "verify:source": "node scripts/verify-source.mjs"
+  }
+}
