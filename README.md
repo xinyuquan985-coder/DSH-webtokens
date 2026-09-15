@@ -1,6 +1,6 @@
 # DSH WebTokens · DeepSeek 网页桥接
 
-把已登录的 DeepSeek 网页接入 **DeepSeek Harness（DSH）** 的模型菜单，让 Harness 在本机完成工具调用、多轮任务、验证与修复。
+把已登录的 DeepSeek 网页作为算力接入 **DeepSeek Harness（DSH）** 的模型菜单，让 Harness 在本机完成工具调用、多轮任务、验证与修复。
 
 本仓库是第三方桥接插件。稳定核心来自 `82440ec209d50d5e8063119cc5e19c84ac9f0ebc`，DSH 插件 **0.2.15**，Chrome 扩展 **0.2.19**。当前仅支持DeepSeek网页，其他模型网页正在验证中。
 
