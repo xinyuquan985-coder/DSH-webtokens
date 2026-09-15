@@ -4,6 +4,8 @@
 
 本仓库是第三方桥接插件。稳定核心来自 `82440ec209d50d5e8063119cc5e19c84ac9f0ebc`，DSH 插件 **0.2.15**，Chrome 扩展 **0.2.19**。当前仅支持DeepSeek网页，其他模型网页正在验证中。
 
+![DeepSeek 网页桥接插件封面](assets/deepseek-web-bridge-cover.png)
+
 ## 安装
 
 需要 Node.js 24+、pnpm、Chrome，以及可以正常登录使用的 DeepSeek 网页账号。已验证的 DSH CLI 版本为 `0.1.5-rc.1`。下列命令在终端执行。
