@@ -44,12 +44,12 @@
     }
   },
   "dependencies": {
-    "@deepseek-ai/dsh-llm": "0.1.5-rc.2",
-    "@deepseek-ai/schemastery": "3.18.2",
+    "@deepseek-ai/dsh-llm": "0.1.7-rc.2",
+    "@deepseek-ai/schemastery": "~3.18.4",
     "ajv": "8.20.0"
   },
   "peerDependencies": {
-    "@deepseek-ai/cordis": "^4.0.2"
+    "@deepseek-ai/cordis": "~4.0.4"
   },
   "scripts": {
     "test": "node --test tests/*.test.mjs",

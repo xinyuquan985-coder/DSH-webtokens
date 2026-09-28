@@ -10,9 +10,9 @@
     "client": { "inject": ["@deepseek-ai/dsh-client-ui-sidebar", "@deepseek-ai/dsh-client-ui-renderer"], "platform": "web" }
   },
   "dependencies": {
-    "@deepseek-ai/dsh-llm": "0.1.5-rc.2",
-    "@deepseek-ai/schemastery": "3.18.2",
+    "@deepseek-ai/dsh-llm": "0.1.7-rc.2",
+    "@deepseek-ai/schemastery": "~3.18.4",
     "ajv": "8.20.0"
   },
-  "peerDependencies": { "@deepseek-ai/cordis": "^4.0.2" }
+  "peerDependencies": { "@deepseek-ai/cordis": "~4.0.4" }
 }

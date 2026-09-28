@@ -8,12 +8,12 @@
 
 ## 安装
 
-需要 Node.js 24+、pnpm、Chrome，以及可以正常登录使用的 DeepSeek 网页账号。已验证的 DSH CLI 版本为 `0.1.5-rc.1`。下列命令在终端执行。
+需要 Node.js 24+、pnpm、Chrome，以及可以正常登录使用的 DeepSeek 网页账号。支持的 DSH CLI 版本为 `0.1.7-rc.2`（依赖按此版本配对锁定）。下列命令在终端执行。
 
 如果尚未安装 DSH：
 
 ```sh
-npm install -g pnpm @deepseek-ai/dsh@0.1.5-rc.1
+npm install -g pnpm @deepseek-ai/dsh@0.1.7-rc.2
 ```
 
 通过 DSH 官方插件入口安装本仓库：
